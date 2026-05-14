@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C App",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ex19/ft_sort_params.c",
+            "args": ["test1", "test2", "test3"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb"
+        },
+        {
+            "name": "Examine Core Dump",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ex19/ft_sort_params.c",
+            "coreDumpPath": "${workspaceFolder}", 
+            "MIMode": "gdb"
+        }
+    ]
+}
