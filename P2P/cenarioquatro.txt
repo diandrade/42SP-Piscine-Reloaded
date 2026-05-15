@@ -1,0 +1,1 @@
+Nessa situação, supondo que a tarefa foi realmente lida de forma errada, assumiria o erro e escutaria o feedback da pessoa de forma ativa, evitando algum tipo de postergação do conflito.

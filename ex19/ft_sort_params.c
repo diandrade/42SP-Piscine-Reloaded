@@ -35,16 +35,22 @@ void ft_print_params(int argc, char** argv)
 int main(int argc, char** argv)
 {
     int j;
+    int i;
     char*   temp;
 
-    j = 2;
-    while(j < argc + 1)
+    j = 1;
+    while(j < argc)
     {
-        if (ft_strcmp(argv[j], argv[j - 1]) > 0)
+        i = 1;
+        while(i < argc)
         {
-            temp = argv[j];
-            argv[j] = argv[j - 1];
-            argv[j - 1] = temp;
+            if (ft_strcmp(argv[j], argv[i]) < 0)
+            {
+                temp = argv[j];
+                argv[j] = argv[i];
+                argv[i] = temp;
+            }
+            i++;
         }
         j++;
     }
