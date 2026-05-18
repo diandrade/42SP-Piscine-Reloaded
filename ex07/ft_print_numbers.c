@@ -1,17 +1,4 @@
-#include <unistd.h>
-
-void    ft_putchar(char character);
-void    ft_print_numbers(void);
-
-int main(void)
-{
-    ft_print_numbers();
-}
-
-void    ft_putchar(char character)
-{
-    write(1, &character, 1);
-}
+void    ft_putchar(char c);
 
 void    ft_print_numbers(void)
 {

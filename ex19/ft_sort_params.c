@@ -1,5 +1,4 @@
-#include <unistd.h>
-#include <stdio.h>
+void ft_putchar(char c);
 
 int ft_strcmp(char *s1, char *s2)
 {
@@ -24,10 +23,10 @@ void ft_print_params(int argc, char** argv)
         i = 0;
         while (argv[j][i] != '\0')
         {
-            write(1, &argv[j][i], 1);
+            ft_putchar(&argv[j][i]); 
             i++;
         }
-        write(1, "\n", 1);
+        ft_putchar("\n");
         j++;    
     }
 }
